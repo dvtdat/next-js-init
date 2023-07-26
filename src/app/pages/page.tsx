@@ -14,7 +14,7 @@ type UserProfile = {
 export default function Test() {
   const [cnt, setCnt] = useState<boolean>(() => true);
   const defaultUserProfile: UserProfile = {
-    name: "DVTD",
+    name: "Dat",
     age: 19,
   };
   const [year, setYear] = useState(2023);
