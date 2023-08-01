@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-//{value: token, setStorageValue} = useStorage(key, defaultvalue) key -> required, defaultValue: optional 
+// {value: token, setStorageValue} = useStorage(key, defaultvalue) key -> required, defaultValue: optional 
 // {value: token} = useStorage('token');
 // token
 export default function useUserPermission() {

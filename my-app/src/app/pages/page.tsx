@@ -5,6 +5,10 @@ import { Button } from "./components/Button";
 import useUserPermission from "./hooks/useUserPermission";
 import useStorage from "./hooks/useStorage";
 import useDebounce from "./hooks/useDebounce";
+import App from "./app";
+import Toggle from "./toggle";
+import Theme from "./theme";
+import Clipboard from "./clipboard";
 
 type UserProfile = {
   name: string;
@@ -12,6 +16,7 @@ type UserProfile = {
 };
 
 export default function Test() {
+  /*
   const [cnt, setCnt] = useState<boolean>(() => true);
   const defaultUserProfile: UserProfile = {
     name: "Dat",
@@ -25,24 +30,12 @@ export default function Test() {
 
   useEffect(() => {
     setYear(2023 - debouncedUserProfile.age);
-  }, [debouncedUserProfile]);
+  }, [debouncedUserProfile]); 
+  */
 
   return (
     <div>
-      <Button />
-      <p>{year}</p>
-      <input
-        style={{ color: "black" }}
-        value={userProfile.age}
-        onChange={(event) =>
-          setUserProfile((prev) => {
-            return { ...prev, age: Number(event.target.value) };
-          })
-        }
-      ></input>
-      <p>
-        {userProfile?.name} / {userProfile?.age}
-      </p>
+      <Clipboard />
     </div>
   );
 }
